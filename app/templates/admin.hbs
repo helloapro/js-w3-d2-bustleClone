@@ -1,0 +1,9 @@
+<h1>Bustle</h1>
+
+<ul>
+  {{#each model as |story|}}
+    {{story-tile story=story deleteStory="deleteStory" updateStory="updateStory"}}
+  {{/each}}
+</ul>
+
+{{story-new saveStory="saveStory"}}

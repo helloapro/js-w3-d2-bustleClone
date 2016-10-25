@@ -1,0 +1,5 @@
+<li>
+  {{story.headline}} written by {{story.author}}
+  {{story-edit story=story updateStory="updateStory"}}
+  <button {{action 'deleteStory' story}} class="btn btn-danger">Delete</button>
+</li>

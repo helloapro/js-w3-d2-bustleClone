@@ -1,0 +1,35 @@
+{{#if addNewStory}}
+  <h1>Add a brank spankin' new story!! (for women, by corporate robots)</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author}}
+      </div>
+
+      <div class="form-group">
+        <label for="headline">Headline</label>
+        {{input value=headline}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{input value=content}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image}}
+      </div>
+
+      <div class="form-group">
+        <label for="featured">true or false</label>
+        {{input value=featured}}
+      </div>
+
+      <button {{action 'saveStory' story}}>Save</button>
+    </form>
+  </div>
+{{else}}
+<button class="btn btn-info" {{action 'storyFormShow'}}>Add a Story</button>
+{{/if}}
